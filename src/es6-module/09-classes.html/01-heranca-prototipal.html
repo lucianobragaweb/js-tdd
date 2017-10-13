@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>01 - Revisão Herança Prototipal</title>
+  </head>
+  <body>
+    <script>
+    // Class
+    function Animal(kind, sound) {
+      // Constructor
+      this.kind = kind;
+      this.sound = sound;
+    }
+
+    // Method
+    Animal.prototype.hello = function () {
+      console.log(`${this.sound}. I am a ${this.kind}!`);
+    }
+
+    const dog = new Animal('dog', 'Au, Au');
+    const cat = new Animal('cat', 'Mial');
+
+    dog.hello();
+    cat.hello();
+    </script>
+  </body>
+</html>
