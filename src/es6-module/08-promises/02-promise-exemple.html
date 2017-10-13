@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>02 - Promise Exemple</title>
+  </head>
+  <body>
+    <script>
+      var posts = fetch('https://willianjusten.com.br/search.json');
+
+      // pending
+      // resolved
+      // rejected
+      posts
+      .then(data => data.json())
+      .then(data => data.map(post => {
+        console.log(post.title)
+      }))
+      .catch(err => console.log(err))
+    </script>
+  </body>
+</html>
