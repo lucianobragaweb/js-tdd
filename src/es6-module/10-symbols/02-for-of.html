@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>02 - for...of</title>
+  </head>
+  <body>
+    <script>
+    // iterators
+    // iterable
+      // [1,2,3,4,5,6] // iterables
+
+var text = 'Vancouver'; // iterable
+var it = text[Symbol.iterator](); // iterator
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+console.log(it.next());
+
+for (letter of text){
+console.log(letter);
+if(letter === 'a') break;
+}
+    </script>
+  </body>
+</html>
