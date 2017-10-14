@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>01 - Maps Intro</title>
+</head>
+<body>
+  <script>
+  let m = new Map();
+
+  m.set('luciano', 25)
+  m.set('bia', 2)
+  m.set('andreza', 20)
+
+  console.log(m);
+  console.log(m.size);
+  console.log(m.delete('andreza'));
+  console.log(m);
+  console.log(m.has('bia'));
+  console.log(m.values());
+
+  const it = m.values()
+  console.log(it.next());
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>01 - WeakMaps Intro</title>
+</head>
+<body>
+  <script>
+  let obj1 = {
+    name: 'luciano',
+    age: 25
+  }
+
+  let obj2 = {
+    name: 'bia',
+    age: 2
+  }
+
+  let wm = new WeakMap();
+
+  wm.set(obj1, 'Info do Luciano')
+  wm.set(obj2, 'Info da Biia')
+
+  console.log(wm);
+  obj1 = null // para ver o resultado rodar wm no console do browser após uns 45seg
+
+  </script>
+</body>
+</html>
